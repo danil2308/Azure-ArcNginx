@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: cligitops6
   name: my-service
 spec:
   selector:
