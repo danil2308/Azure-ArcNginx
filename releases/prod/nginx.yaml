@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
-  namespace: cligitops6
+  labels:
+    app.kubernetes.io/name: load-balancer-example
+  name: hello-world
 spec:
+  replicas: 5
   selector:
     matchLabels:
-      app: nginx
-  replicas: 3 # tells deployment to run 2 pods matching the template
+      app.kubernetes.io/name: load-balancer-example
   template:
     metadata:
-      namespace: cligitops6
       labels:
-        app: nginx        
+        app.kubernetes.io/name: load-balancer-example
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - image: gcr.io/google-samples/node-hello:1.0
+        name: hello-world
         ports:
-        - containerPort: 80
+        - containerPort: 8080
