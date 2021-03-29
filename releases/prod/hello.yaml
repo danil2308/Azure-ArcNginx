@@ -16,4 +16,4 @@ spec:
     replicaCount: 5
     env:
       name: MESSAGE
-      value: Guapa pechocha
+      value: Azure Arc enabled K8s GitOps Demo!2
