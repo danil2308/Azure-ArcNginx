@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app.kubernetes.io/name: load-balancer-example
+  namespace: cligitops6
   name: hello-world
 spec:
   replicas: 5
@@ -13,6 +14,7 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: load-balancer-example
+      namespace: cligitops6
     spec:
       containers:
       - image: gcr.io/google-samples/node-hello:1.0
