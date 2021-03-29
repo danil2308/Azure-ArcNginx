@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-kubernetes-custom
-  namespace: cligitops6
+  namespace: azure-arc-github
 spec:
   type: LoadBalancer
   ports:
@@ -16,7 +16,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-kubernetes-custom
-  namespace: cligitops6
+  namespace: azure-arc-github
 spec:
   replicas: 10
   selector:
@@ -34,4 +34,4 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: Murillo cura mas
+          value: Kubernetes + GitOps 
