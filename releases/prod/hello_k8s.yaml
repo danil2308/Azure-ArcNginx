@@ -18,7 +18,7 @@ metadata:
   name: hello-kubernetes-custom
   namespace: cligitops6
 spec:
-  replicas: 10
+  replicas: 1
   selector:
     matchLabels:
       app: hello-kubernetes-custom
@@ -34,4 +34,4 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: I just deployed this on Kubernetes!
+          value: I just deployed this on Kubernetes!22
