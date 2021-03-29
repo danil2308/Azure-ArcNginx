@@ -34,4 +34,4 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: Guapa Pechocha
+          value: Kubernetes Deployment
