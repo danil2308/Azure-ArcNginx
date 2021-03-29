@@ -18,7 +18,7 @@ metadata:
   name: hello-kubernetes-custom
   namespace: cligitops6
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: hello-kubernetes-custom
