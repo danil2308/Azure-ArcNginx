@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: cligitops5
+  namespace: cligitops6
 spec:
   selector:
     matchLabels:
@@ -10,7 +10,7 @@ spec:
   replicas: 3 # tells deployment to run 2 pods matching the template
   template:
     metadata:
-      namespace: cligitops5
+      namespace: cligitops6
       labels:
         app: nginx        
     spec:
