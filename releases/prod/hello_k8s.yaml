@@ -18,7 +18,7 @@ metadata:
   name: hello-kubernetes-custom
   namespace: azure-arc-github
 spec:
-  replicas: 10
+  replicas: 5
   selector:
     matchLabels:
       app: hello-kubernetes-custom
